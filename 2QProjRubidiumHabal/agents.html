@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<meta charset="UTF-8" name="viewport" content="with=device-width, initial-scalre=1.0">
+		<title>The Story of VALORANT</title>
+		<link rel="stylesheet" href="css/styles.css" type="text/css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+	</head>
+	
+	<body>
+		
+		<section class="bg">
+			
+			<header>
+				<a href="index.html"><img src="images/logo.png"></a>
+			</header>
+			
+			<nav>
+				<div class="nav-links" id="navLinks">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="origin.html">ORIGIN</a></li>
+						<li><a href="thegame.html">THE GAME</a></li>
+						<li><a href="agents.html">AGENTS</a></li>
+						<li><a href="esports.html">ESPORTS</a></li>
+					</ul>
+				</div>
+			</nav>
+			
+			<!--- page content ---->
+			
+			
+			<!--- footer content ---->
+			
+			<footer>
+				<img src="images/logo.png">
+				<p>Contact us!<br>09608673331<br>b2025maehabal@pshs.edu.ph</p>
+				<p>© All Rights Reserved<p>
+			</footer>
+
+		</section>
+		
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+			showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = x.length}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			x[slideIndex-1].style.display = "block";  
+			}
+		</script>
+		
+	</body>
+
+</html>
